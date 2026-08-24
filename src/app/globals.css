@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: #0F172A;
+    background-color: #FFFFFF;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Mobile & Touch Performance */
+* {
+  box-sizing: border-box;
+}
+
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom Editorial Styling & Utility Classes */
+.font-display {
+  font-family: var(--font-heading);
+}
+
+.text-navy {
+  color: #06101E;
+}
+
+.bg-navy {
+  background-color: #06101E;
+}
+
+.bg-navy-accent {
+  background-color: #0B192C;
+}
+
+.border-navy-subtle {
+  border-color: rgba(6, 16, 30, 0.08);
+}
+
+.text-gold {
+  color: #C5A880;
+}
+
+.bg-gold {
+  background-color: #C5A880;
+}
+
+.border-gold {
+  border-color: #C5A880;
+}
+
+/* Luxury Card Hover Effects */
+.luxury-card {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -15px rgba(6, 16, 30, 0.08);
+}
+
+/* Image Clip Reveal & Parallax */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0B192C;
+}

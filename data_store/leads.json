@@ -1,0 +1,50 @@
+[
+  {
+    "id": "LX-345562-135",
+    "name": "Sunil Sharma",
+    "email": "sunil.sharma@luxuryinvestor.com",
+    "phone": "+91 98100 11223",
+    "projectType": "Brochure Download - Bollywood Aero City Farms",
+    "message": "Client requested brochure download from Bollywood Aero City page.",
+    "source": "Brochure Download",
+    "status": "New",
+    "createdAt": "2026-08-24T20:45:45.562Z",
+    "updatedAt": "2026-08-24T20:45:45.562Z"
+  },
+  {
+    "id": "lead-1",
+    "name": "Vikram Malhotra",
+    "phone": "+91 98112 34567",
+    "email": "vikram.m@example.com",
+    "projectType": "Bollywood Aero City Farms",
+    "message": "Interested in 2000 Sq. Yds farm plot near Jewar Airport. Looking for quick site visit this Saturday.",
+    "source": "Brochure Download",
+    "status": "New",
+    "createdAt": "2026-08-24T20:10:24.732Z",
+    "updatedAt": "2026-08-24T20:10:24.732Z"
+  },
+  {
+    "id": "lead-2",
+    "name": "Ananya Singhal",
+    "phone": "+91 98710 99887",
+    "email": "ananya.singhal@outlook.com",
+    "projectType": "Bollywood Aero City Farms",
+    "message": "Requested official comprehensive project brochure for Bollywood Aero City Farms. File: /downloads/brochure.pdf",
+    "source": "Brochure Download",
+    "status": "Contacted",
+    "createdAt": "2026-08-24T17:45:24.732Z",
+    "updatedAt": "2026-08-24T18:45:24.732Z"
+  },
+  {
+    "id": "lead-3",
+    "name": "Harish Vardhan",
+    "phone": "+91 99990 12345",
+    "email": "h.vardhan@gmail.com",
+    "projectType": "Plotted Developments",
+    "message": "Looking for clear-title commercial / residential plot near Yamuna Expressway.",
+    "source": "Contact Page",
+    "status": "Site Visit Scheduled",
+    "createdAt": "2026-08-23T20:45:24.732Z",
+    "updatedAt": "2026-08-24T08:45:24.732Z"
+  }
+]
