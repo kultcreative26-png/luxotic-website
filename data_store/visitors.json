@@ -1,5 +1,29 @@
 [
   {
+    "id": "v-1788376992638",
+    "page": "/",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:23:12.638Z"
+  },
+  {
+    "id": "v-1788376977649",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:22:57.649Z"
+  },
+  {
+    "id": "v-1788376977577",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:22:57.577Z"
+  },
+  {
     "id": "v-1788376803038",
     "page": "/gallery",
     "referrer": "Direct / Organic",
