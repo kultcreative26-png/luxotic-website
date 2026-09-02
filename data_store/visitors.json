@@ -1,5 +1,117 @@
 [
   {
+    "id": "v-1788376803038",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:20:03.038Z"
+  },
+  {
+    "id": "v-1788376802978",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:20:02.978Z"
+  },
+  {
+    "id": "v-1788376791659",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:19:51.659Z"
+  },
+  {
+    "id": "v-1788376791616",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:19:51.616Z"
+  },
+  {
+    "id": "v-1788376781024",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:19:41.024Z"
+  },
+  {
+    "id": "v-1788376780966",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:19:40.966Z"
+  },
+  {
+    "id": "v-1788375282161",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:54:42.161Z"
+  },
+  {
+    "id": "v-1788375276937",
+    "page": "/contact",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:54:36.937Z"
+  },
+  {
+    "id": "v-1788375270401",
+    "page": "/sustainability",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:54:30.401Z"
+  },
+  {
+    "id": "v-1788375254723",
+    "page": "/our-approach",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:54:14.723Z"
+  },
+  {
+    "id": "v-1788375250383",
+    "page": "/projects",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:54:10.383Z"
+  },
+  {
+    "id": "v-1788375242057",
+    "page": "/about-us",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:54:02.057Z"
+  },
+  {
+    "id": "v-1788375135270",
+    "page": "/",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:52:15.270Z"
+  },
+  {
+    "id": "v-1788375135184",
+    "page": "/",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T18:52:15.185Z"
+  },
+  {
     "id": "v-1787607581733",
     "page": "/gallery",
     "referrer": "localhost",

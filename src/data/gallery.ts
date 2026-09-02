@@ -103,7 +103,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     id: "gal-10",
     title: "Master Community Layout & Landscape Blueprint",
     category: "Masterplans",
-    image: "/images/fresh/luxotic-masterplan-render.jpg",
+    image: "/images/fresh/luxotic-masterplan-blueprint.jpg",
     location: "Yamuna Expressway Region",
     tag: "Strategic Township Masterplan",
     description: "Detailed 3D architectural rendering illustrating zoning, arterial road networks, clubhouse zones, and green recreational belts."

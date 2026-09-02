@@ -147,7 +147,7 @@ export const SITE_DATA = {
       title: "End-to-End Sales & Support",
       tagline: "From inquiry to possession.",
       description: "Complete assistance from property search, documentation, booking, legal verification, up to final possession and prompt after-sales support.",
-      image: "/images/fresh/luxotic-masterplan-render.jpg"
+      image: "/images/fresh/luxotic-masterplan-blueprint.jpg"
     }
   ]
 };

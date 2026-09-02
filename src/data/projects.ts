@@ -98,11 +98,11 @@ export const PROJECTS_DATA: Project[] = [
     ],
     gallery: [
       "/images/fresh/luxotic-plots-fresh.jpg",
-      "/images/fresh/luxotic-masterplan-render.jpg",
+      "/images/fresh/luxotic-masterplan-blueprint.jpg",
       "/images/sustainability/sustainable-green-building.jpg",
       "/images/fresh/luxotic-residences.jpg"
     ],
-    masterplanImage: "/images/fresh/luxotic-masterplan-render.jpg",
+    masterplanImage: "/images/fresh/luxotic-masterplan-blueprint.jpg",
     brochurePath: "/downloads/luxotic-plots-brochure.pdf",
     reraNumber: "[CONTENT REQUIRED]",
     squareFootage: "[CONTENT REQUIRED]"
@@ -144,7 +144,7 @@ export const PROJECTS_DATA: Project[] = [
       "/images/hero/hero-main.jpg",
       "/images/fresh/luxotic-experience-lounge.jpg"
     ],
-    masterplanImage: "/images/fresh/luxotic-masterplan-render.jpg",
+    masterplanImage: "/images/fresh/luxotic-masterplan-blueprint.jpg",
     brochurePath: "/downloads/luxotic-residences-brochure.pdf",
     reraNumber: "[CONTENT REQUIRED]",
     squareFootage: "[CONTENT REQUIRED]"
