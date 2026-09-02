@@ -1,5 +1,53 @@
 [
   {
+    "id": "v-1788377483232",
+    "page": "/",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:31:23.232Z"
+  },
+  {
+    "id": "v-1788377479524",
+    "page": "/our-approach",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:31:19.524Z"
+  },
+  {
+    "id": "v-1788377476108",
+    "page": "/contact",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:31:16.108Z"
+  },
+  {
+    "id": "v-1788377468470",
+    "page": "/sustainability",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:31:08.470Z"
+  },
+  {
+    "id": "v-1788377462946",
+    "page": "/gallery",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:31:02.946Z"
+  },
+  {
+    "id": "v-1788377459977",
+    "page": "/contact",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-09-02T19:30:59.977Z"
+  },
+  {
     "id": "v-1788376992638",
     "page": "/",
     "referrer": "Direct / Organic",
