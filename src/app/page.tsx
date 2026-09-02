@@ -188,6 +188,7 @@ export default function HomePage() {
                     src="/images/fresh/luxotic-residences.jpg"
                     alt="Luxotic Premium Architectural Landmark"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                   />
                 </div>
@@ -294,6 +295,7 @@ export default function HomePage() {
                         src={project.heroImage}
                         alt={project.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover"
                       />
                       <div className="absolute top-4 left-4 bg-slate-900/90 text-white text-[10px] uppercase tracking-widest px-3 py-1 font-semibold">
@@ -356,6 +358,7 @@ export default function HomePage() {
                       src={service.image}
                       alt={service.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover"
                     />
                   </div>
