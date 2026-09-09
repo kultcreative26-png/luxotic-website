@@ -33,7 +33,6 @@ export default function Header() {
     { name: "Projects", href: "/projects" },
     { name: "Our Approach", href: "/our-approach" },
     { name: "Sustainability", href: "/sustainability" },
-    { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
 
