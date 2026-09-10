@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { X, Download, Loader2, CheckCircle2, FileText, User, Phone, Mail, ShieldCheck } from "lucide-react";
+import { X, Download, Loader2, CheckCircle2, FileText, User, Phone, Mail, ShieldCheck, BookOpen } from "lucide-react";
 
 interface BrochureModalProps {
   isOpen: boolean;
   onClose: () => void;
   projectName?: string;
   brochurePath?: string;
+  onOpenFlipbook?: () => void;
 }
 
 export default function BrochureModal({
@@ -15,6 +16,7 @@ export default function BrochureModal({
   onClose,
   projectName = "Bollywood Aero City Farms",
   brochurePath = "/downloads/brochure.pdf",
+  onOpenFlipbook,
 }: BrochureModalProps) {
   const [formData, setFormData] = useState({
     name: "",
@@ -136,16 +138,29 @@ export default function BrochureModal({
               </div>
 
               <div className="pt-2 space-y-2">
+                {onOpenFlipbook && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      handleClose();
+                      onOpenFlipbook();
+                    }}
+                    className="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md cursor-pointer"
+                  >
+                    <BookOpen className="w-4 h-4" />
+                    <span>Open Interactive Flipbook Now</span>
+                  </button>
+                )}
                 <button
                   onClick={handleDownloadTrigger}
-                  className="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-900 text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+                  className="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-900 text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors cursor-pointer"
                 >
                   <Download className="w-4 h-4" />
                   <span>Download Again</span>
                 </button>
                 <button
                   onClick={handleClose}
-                  className="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold uppercase tracking-widest transition-colors shadow-md"
+                  className="w-full py-3 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold uppercase tracking-widest transition-colors shadow-md cursor-pointer"
                 >
                   Done
                 </button>
@@ -248,6 +263,22 @@ export default function BrochureModal({
                   )}
                 </button>
               </div>
+
+              {onOpenFlipbook && (
+                <div className="text-center pt-2 border-t border-slate-100">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      handleClose();
+                      onOpenFlipbook();
+                    }}
+                    className="text-xs text-amber-600 hover:text-amber-700 font-semibold inline-flex items-center gap-1.5 transition-colors cursor-pointer"
+                  >
+                    <BookOpen className="w-3.5 h-3.5" />
+                    <span>Prefer to read online? Open Flipbook Reader</span>
+                  </button>
+                </div>
+              )}
             </form>
           )}
         </div>

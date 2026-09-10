@@ -25,12 +25,14 @@ import {
   BatteryCharging,
   Milestone,
   Flame,
+  BookOpen,
 } from "lucide-react";
 import { Project } from "@/data/projects";
 import { SITE_DATA } from "@/data/site";
 import GalleryModal from "@/components/GalleryModal";
 import EnquireModal from "@/components/EnquireModal";
 import BrochureModal from "@/components/BrochureModal";
+import BrochureFlipbookModal from "@/components/BrochureFlipbookModal";
 
 const getAmenityIcon = (iconName: string) => {
   switch (iconName) {
@@ -78,6 +80,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
   const [selectedGalleryIdx, setSelectedGalleryIdx] = useState(0);
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [brochureModalOpen, setBrochureModalOpen] = useState(false);
+  const [flipbookOpen, setFlipbookOpen] = useState(false);
 
   return (
     <div className="pt-24 bg-white min-h-screen space-y-0">
@@ -122,6 +125,25 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
               <span className="uppercase tracking-wider">
                 Status: {project.status}
               </span>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              <button
+                type="button"
+                onClick={() => setFlipbookOpen(true)}
+                className="px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all shadow-lg cursor-pointer group"
+              >
+                <BookOpen className="w-4 h-4 transition-transform group-hover:scale-110" />
+                <span>Read Interactive Flipbook</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setBrochureModalOpen(true)}
+                className="px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-semibold uppercase tracking-wider flex items-center gap-2 backdrop-blur-sm transition-all cursor-pointer"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Download PDF Brochure</span>
+              </button>
             </div>
           </div>
         </div>
@@ -287,10 +309,12 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                 </p>
 
                 <button
-                  onClick={() => setEnquireOpen(true)}
-                  className="w-full py-3.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold uppercase tracking-widest transition-colors shadow-sm"
+                  type="button"
+                  onClick={() => setFlipbookOpen(true)}
+                  className="w-full py-3.5 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 transition-all shadow-md group cursor-pointer"
                 >
-                  Enquire About This Project
+                  <BookOpen className="w-4 h-4 transition-transform group-hover:scale-110" />
+                  <span>Open Interactive Flipbook</span>
                 </button>
 
                 <button
@@ -299,7 +323,14 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                   className="w-full py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-900 text-xs font-semibold uppercase tracking-widest flex items-center justify-center gap-2 transition-colors cursor-pointer"
                 >
                   <Download className="w-4 h-4" />
-                  <span>Download Brochure</span>
+                  <span>Download Brochure (PDF)</span>
+                </button>
+
+                <button
+                  onClick={() => setEnquireOpen(true)}
+                  className="w-full py-3.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold uppercase tracking-widest transition-colors shadow-sm cursor-pointer"
+                >
+                  Enquire About This Project
                 </button>
 
                 <div className="pt-4 border-t border-slate-100 space-y-2 text-[11px] text-slate-500">
@@ -339,6 +370,23 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
         onClose={() => setBrochureModalOpen(false)}
         projectName={project.name}
         brochurePath={project.brochurePath}
+        onOpenFlipbook={() => setFlipbookOpen(true)}
+      />
+
+      <BrochureFlipbookModal
+        isOpen={flipbookOpen}
+        onClose={() => setFlipbookOpen(false)}
+        projectName={project.name}
+        brochurePath={project.brochurePath}
+        pages={
+          project.brochurePages && project.brochurePages.length > 0
+            ? project.brochurePages
+            : project.gallery
+        }
+        onDownloadClick={() => {
+          setFlipbookOpen(false);
+          setBrochureModalOpen(true);
+        }}
       />
     </div>
   );

@@ -14,6 +14,7 @@ export interface Project {
   gallery: string[];
   masterplanImage: string;
   brochurePath: string;
+  brochurePages?: string[];
   titleStatus: string;
   reraNumber?: string;
   squareFootage: string;
@@ -63,6 +64,20 @@ export const PROJECTS_DATA: Project[] = [
     ],
     masterplanImage: "/images/bollywood-aerocity/aerial_farm_estates.png",
     brochurePath: "/downloads/brochure.pdf",
+    brochurePages: [
+      "/images/bollywood-aerocity/brochure_pages/page_1.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_2.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_3.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_4.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_5.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_6.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_7.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_8.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_9.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_10.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_11.jpg",
+      "/images/bollywood-aerocity/brochure_pages/page_12.jpg"
+    ],
     titleStatus: "100% Clear Title / Gated Development",
     reraNumber: "100% Clear Title / Gated Development",
     squareFootage: "1,000 – 2,500+ Sq. Yards (Est. Starting ₹1.75 Cr*)"
@@ -110,6 +125,12 @@ export const PROJECTS_DATA: Project[] = [
     ],
     masterplanImage: "/images/radha-paradise/masterplan_layout.jpg",
     brochurePath: "/downloads/Radha-Paradise-Brochure.pdf",
+    brochurePages: [
+      "/images/radha-paradise/page_1.jpg",
+      "/images/radha-paradise/page_2.jpg",
+      "/images/radha-paradise/page_3.jpg",
+      "/images/radha-paradise/page_4.jpg"
+    ],
     titleStatus: "100% Clear Title / Freehold Gated Society",
     reraNumber: "100% Clear Title / Freehold Gated Society",
     squareFootage: "60 & 80 Sq.Yd. (3BHK Luxury Duplex Villas & Plots)"
