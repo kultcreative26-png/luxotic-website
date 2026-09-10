@@ -312,7 +312,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                       {SITE_DATA.contact.phone}
                     </a>
                   </div>
-                  <div>• Site Visits Available Mon-Sat</div>
+                  <div>• Site Visits Available Wed–Mon (Tuesday Closed)</div>
                 </div>
               </div>
             </div>

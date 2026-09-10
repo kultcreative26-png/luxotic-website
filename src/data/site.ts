@@ -12,7 +12,7 @@ export const SITE_DATA = {
     email: "luxoticinfrastructure@gmail.com",
     website: "www.luxoticinfra.com",
     address: "Noida, Uttar Pradesh, India",
-    workingHours: "Monday - Saturday: 9:30 AM - 6:30 PM"
+    workingHours: "Wednesday – Monday: 9:30 AM – 6:30 PM (Tuesday Closed)"
   },
 
   social: {
