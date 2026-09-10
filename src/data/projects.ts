@@ -66,6 +66,52 @@ export const PROJECTS_DATA: Project[] = [
     squareFootage: "1,000 – 2,500+ Sq. Yards (Est. Starting ₹1.75 Cr*)"
   },
   {
+    slug: "radha-paradise",
+    name: "Radha Paradise",
+    category: "Residential Properties",
+    categorySlug: "residential",
+    tagline: "Luxury, Comfort, Community Perfectly Planned",
+    location: "NH-91, GT Road, Opp. Mohan Swaroop Hospital, Dadri (New Noida), Gautam Budh Nagar - 201207",
+    heroImage: "/images/radha-paradise/hero_entrance.jpg",
+    status: "Ongoing",
+    shortDescription: "One of the most sought-after residential gated developments in Dadri (New Noida) on NH-91 GT Road. Offering 60 & 80 Sq.Yd. 3BHK customizable luxury duplex villas and plots, earthquake-resistant RCC construction, and seamless connectivity to DMIC and Eastern Peripheral Expressway.",
+    overview: [
+      "RADHA PARADISE is a prestigious residential villa community in Dadri (New Noida), thoughtfully designed and executed under the vision 'Udaan Hamari, Aashiyana Aapka' by Luxotic Infrastructure Pvt. Ltd.",
+      "Strategically situated directly on NH-91 GT Road opposite Mohan Swaroop Hospital, Radha Paradise enjoys seamless multi-lane connectivity to key city destinations, Eastern Peripheral Expressway (6-lane EPE), and DMIC (Delhi-Mumbai Industrial Corridor - Japan assisted), making it an ideal choice for both end-users and investors.",
+      "The township features earthquake-resistant RCC framed structures, 60 Sq.Yd. (15'6\" x 35') and 80 Sq.Yd. (18'6\" x 39') 3BHK duplex floor plans with customizable layouts, polished vitrified flooring, wide 20' & 22' paved boulevards, underground drainage, 24/7 CCTV gated security, and a grand community temple."
+    ],
+    highlights: [
+      "Direct NH-91 GT Road location opposite Mohan Swaroop Hospital, Dadri (New Noida)",
+      "3 Km from Eastern Peripheral Expressway (6-Lane EPE) & 2 Km from DMIC Corridor",
+      "Just 2 Km from Dadri Air Force Station & 400 meters from Dadri Bypass",
+      "Customizable 3BHK Duplex Villas: 60 Sq.Yd. (15'6\" x 35') & 80 Sq.Yd. (18'6\" x 39')",
+      "Earthquake-Resistant RCC Structure with polished vitrified flooring & designer false ceiling",
+      "Wide 20' and 22' internal paved roads with street lighting & underground drainage",
+      "Civic ecosystem within 3 km: Top schools (Kaushalya World School, Decent Public School), hospitals, banks & shopping",
+      "Gated society with 24/7 CCTV surveillance, boundary walls & grand entrance gate"
+    ],
+    amenities: [
+      { name: "Underground Sewerage System", icon: "ShieldCheck" },
+      { name: "24/7 Gated Security & CCTV", icon: "Lock" },
+      { name: "Dedicated Electricity & Power Backup", icon: "Zap" },
+      { name: "Community Green Parks & Play Zone", icon: "Trees" },
+      { name: "Grand Society Temple", icon: "Home" },
+      { name: "Wide 20' & 22' Paved Roads", icon: "Milestone" },
+      { name: "Earthquake-Resistant Structure", icon: "Building2" },
+      { name: "Vicinity to Top Schools & Hospitals", icon: "MapPin" }
+    ],
+    gallery: [
+      "/images/radha-paradise/hero_entrance.jpg",
+      "/images/radha-paradise/villa_floorplans.jpg",
+      "/images/radha-paradise/amenities_vicinity.jpg",
+      "/images/radha-paradise/masterplan_layout.jpg"
+    ],
+    masterplanImage: "/images/radha-paradise/masterplan_layout.jpg",
+    brochurePath: "/downloads/Radha-Paradise-Brochure.pdf",
+    reraNumber: "Clear Title / RERA Processed Township",
+    squareFootage: "60 & 80 Sq.Yd. (3BHK Luxury Duplex Villas & Plots)"
+  },
+  {
     slug: "luxotic-horizon-plots",
     name: "Luxotic Horizon Plotted Enclave",
     category: "Plotted Developments",

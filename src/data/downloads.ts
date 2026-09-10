@@ -31,6 +31,16 @@ export const DOWNLOADS_DATA: DownloadableDoc[] = [
     description: "Comprehensive project brochure detailing Bollywood Aero City Farms plot sizes (1000-2500 Sq. Yds), enclave amenities, location map near Jewar Airport, and investment benefits."
   },
   {
+    id: "radha-paradise-brochure",
+    title: "Radha Paradise Luxury Villas & Plots Brochure",
+    category: "Project Brochures",
+    fileType: "PDF",
+    fileSize: "2.6 MB",
+    filePath: "/downloads/Radha-Paradise-Brochure.pdf",
+    isAvailable: true,
+    description: "Official project brochure with layout plans, 60 & 80 Sq.Yd. 3BHK villa construction specs, location map on NH-91 GT Road Dadri, and vicinity ecosystem."
+  },
+  {
     id: "plots-brochure",
     title: "Luxotic Horizon Plotted Enclave Brochure",
     category: "Project Brochures",
