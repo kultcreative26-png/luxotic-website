@@ -145,10 +145,10 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
             </div>
             <div>
               <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
-                RERA REGISTRATION
+                OWNERSHIP / TITLE
               </div>
               <div className="font-serif text-base font-medium text-slate-700">
-                {project.reraNumber}
+                {project.titleStatus || project.reraNumber || "Clear Title / Freehold"}
               </div>
             </div>
             <div>

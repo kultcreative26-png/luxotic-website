@@ -14,7 +14,8 @@ export interface Project {
   gallery: string[];
   masterplanImage: string;
   brochurePath: string;
-  reraNumber: string;
+  titleStatus: string;
+  reraNumber?: string;
   squareFootage: string;
 }
 
@@ -62,7 +63,8 @@ export const PROJECTS_DATA: Project[] = [
     ],
     masterplanImage: "/images/bollywood-aerocity/aerial_farm_estates.png",
     brochurePath: "/downloads/brochure.pdf",
-    reraNumber: "Sanctioned Layout / Gated Development",
+    titleStatus: "100% Clear Title / Gated Development",
+    reraNumber: "100% Clear Title / Gated Development",
     squareFootage: "1,000 – 2,500+ Sq. Yards (Est. Starting ₹1.75 Cr*)"
   },
   {
@@ -108,7 +110,8 @@ export const PROJECTS_DATA: Project[] = [
     ],
     masterplanImage: "/images/radha-paradise/masterplan_layout.jpg",
     brochurePath: "/downloads/Radha-Paradise-Brochure.pdf",
-    reraNumber: "Clear Title / RERA Processed Township",
+    titleStatus: "100% Clear Title / Freehold Gated Society",
+    reraNumber: "100% Clear Title / Freehold Gated Society",
     squareFootage: "60 & 80 Sq.Yd. (3BHK Luxury Duplex Villas & Plots)"
   },
   {
@@ -150,8 +153,9 @@ export const PROJECTS_DATA: Project[] = [
     ],
     masterplanImage: "/images/fresh/luxotic-masterplan-blueprint.jpg",
     brochurePath: "/downloads/luxotic-plots-brochure.pdf",
-    reraNumber: "[CONTENT REQUIRED]",
-    squareFootage: "[CONTENT REQUIRED]"
+    titleStatus: "Clear Title / Demarcated Plots",
+    reraNumber: "Clear Title / Demarcated Plots",
+    squareFootage: "100 – 500+ Sq. Yards Demarcated Plots"
   },
   {
     slug: "luxotic-grand-residences",
@@ -192,7 +196,8 @@ export const PROJECTS_DATA: Project[] = [
     ],
     masterplanImage: "/images/fresh/luxotic-masterplan-blueprint.jpg",
     brochurePath: "/downloads/luxotic-residences-brochure.pdf",
-    reraNumber: "[CONTENT REQUIRED]",
-    squareFootage: "[CONTENT REQUIRED]"
+    titleStatus: "Freehold / Luxury Gated Residences",
+    reraNumber: "Freehold / Luxury Gated Residences",
+    squareFootage: "3 BHK & 4 BHK Luxury Residences"
   }
 ];

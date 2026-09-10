@@ -4,20 +4,15 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowUpRight, Sparkles, Volume2, VolumeX, Play, Pause, Maximize2, MapPin, Eye } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Sparkles, Volume2, VolumeX, Play, Pause, MapPin } from "lucide-react";
 import { SITE_DATA } from "@/data/site";
 import { PROJECTS_DATA } from "@/data/projects";
-import { GALLERY_DATA, GALLERY_CATEGORIES } from "@/data/gallery";
 import EnquireModal from "@/components/EnquireModal";
-import GalleryModal from "@/components/GalleryModal";
 import AnimatedSection from "@/components/AnimatedSection";
 
 export default function HomePage() {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  const [selectedGalleryCategory, setSelectedGalleryCategory] = useState<string>("All");
-  const [galleryLightboxOpen, setGalleryLightboxOpen] = useState(false);
-  const [activeGalleryIndex, setActiveGalleryIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -387,136 +382,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* LUXURY PROJECT GALLERY SHOWCASE */}
-      <section className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-              <div>
-                <div className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                  CURATED VISUAL EXPERIENCE
-                </div>
-                <h2 className="font-serif text-3xl sm:text-5xl text-slate-900">
-                  Project Gallery
-                </h2>
-              </div>
-
-              <div className="flex items-center gap-4 mt-6 md:mt-0">
-                <Link
-                  href="/gallery"
-                  className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-900 hover:text-amber-600 border-b border-slate-900 pb-1 transition-all group"
-                >
-                  <span>View All Media ({GALLERY_DATA.length})</span>
-                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </Link>
-              </div>
-            </div>
-
-            {/* Filter Buttons */}
-            <div className="flex flex-wrap items-center gap-2 mb-10">
-              {GALLERY_CATEGORIES.slice(0, 5).map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedGalleryCategory(cat)}
-                  className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
-                    selectedGalleryCategory === cat
-                      ? "bg-slate-900 text-white shadow-sm"
-                      : "bg-white text-slate-600 hover:bg-slate-200 border border-slate-200/80"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          </AnimatedSection>
-
-          {/* 6 Curated Showcase Photos */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {(selectedGalleryCategory === "All"
-              ? GALLERY_DATA.slice(0, 6)
-              : GALLERY_DATA.filter((i) => i.category === selectedGalleryCategory).slice(0, 6)
-            ).map((item, idx) => (
-              <AnimatedSection key={item.id} delay={idx * 0.1}>
-                <div className="group bg-white border border-slate-200 overflow-hidden luxury-card flex flex-col justify-between h-full">
-                  <div
-                    onClick={() => {
-                      setActiveGalleryIndex(
-                        GALLERY_DATA.findIndex((g) => g.id === item.id)
-                      );
-                      setGalleryLightboxOpen(true);
-                    }}
-                    className="relative aspect-[16/11] w-full overflow-hidden bg-slate-100 cursor-pointer img-zoom-container"
-                  >
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-
-                    {/* Gradient Overlay & Hover Button */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="px-4 py-2.5 bg-white text-slate-900 text-xs font-semibold uppercase tracking-wider flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                        <Maximize2 className="w-3.5 h-3.5 text-slate-900" />
-                        <span>View High-Res</span>
-                      </div>
-                    </div>
-
-                    <div className="absolute top-4 left-4 bg-slate-900/90 text-white text-[10px] uppercase tracking-widest px-3 py-1 font-semibold backdrop-blur-sm">
-                      {item.tag}
-                    </div>
-                  </div>
-
-                  <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-1.5 text-[11px] font-semibold text-amber-600 uppercase tracking-wider">
-                        <MapPin className="w-3.5 h-3.5 shrink-0" />
-                        <span>{item.location}</span>
-                      </div>
-                      <h3 className="font-serif text-lg text-slate-900 group-hover:text-slate-700 transition-colors leading-snug">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs text-slate-600 font-light leading-relaxed line-clamp-2">
-                        {item.description}
-                      </p>
-                    </div>
-
-                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
-                        {item.category}
-                      </span>
-                      <button
-                        onClick={() => {
-                          setActiveGalleryIndex(
-                            GALLERY_DATA.findIndex((g) => g.id === item.id)
-                          );
-                          setGalleryLightboxOpen(true);
-                        }}
-                        className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-slate-900 hover:text-amber-600 transition-colors"
-                      >
-                        <Eye className="w-3.5 h-3.5" />
-                        <span>Preview</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <Link
-              href="/gallery"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold uppercase tracking-widest transition-all shadow-md group"
-            >
-              <span>Explore Complete Photo Gallery</span>
-              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* CTA BANNER */}
       <section className="py-24 bg-white border-t border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
@@ -547,15 +412,6 @@ export default function HomePage() {
           </AnimatedSection>
         </div>
       </section>
-
-      {/* Gallery Fullscreen Lightbox Modal */}
-      <GalleryModal
-        isOpen={galleryLightboxOpen}
-        images={GALLERY_DATA.map((item) => item.image)}
-        initialIndex={activeGalleryIndex}
-        onClose={() => setGalleryLightboxOpen(false)}
-        projectName="LUXOTIC Architectural Showcase"
-      />
 
       <EnquireModal
         isOpen={enquireOpen}
