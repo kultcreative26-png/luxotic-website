@@ -90,6 +90,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/projects/dhani-enclave" className="hover:text-white transition-colors">
+                  Dhani Enclave Plotted Township
+                </Link>
+              </li>
+              <li>
                 <Link href="/projects" className="hover:text-white transition-colors">
                   All Featured Projects
                 </Link>

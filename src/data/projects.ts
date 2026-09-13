@@ -134,5 +134,56 @@ export const PROJECTS_DATA: Project[] = [
     titleStatus: "100% Clear Title / Freehold Gated Society",
     reraNumber: "100% Clear Title / Freehold Gated Society",
     squareFootage: "60 & 80 Sq.Yd. (3BHK Luxury Duplex Villas & Plots)"
+  },
+  {
+    slug: "dhani-enclave",
+    name: "Dhani Enclave",
+    category: "Plotted Developments",
+    categorySlug: "plots",
+    tagline: "Live Connected. Live Better.",
+    location: "Near Dadri Bypass, NH-91, Dadri (New Noida), Uttar Pradesh",
+    heroImage: "/images/dhani-enclave/hero_entrance.jpg",
+    status: "Upcoming",
+    shortDescription: "A thoughtfully planned upcoming township near Dadri Bypass on NH-91 (New Noida) offering premium residential plots for modern living. Features wide internal roads, underground utilities, landscaped green parks, and 24x7 gated security.",
+    overview: [
+      "DHANI ENCLAVE is an upcoming masterplanned residential plotted community in Dadri (New Noida), developed under the vision 'Udaan Hamari, Aashiyana Aapka' by Luxotic Infrastructure Pvt. Ltd.",
+      "Strategically situated near Dadri Bypass right on NH-91, Dhani Enclave blends modern infrastructure, green open surroundings, and seamless connectivity to Noida, Greater Noida, Ghaziabad, and the upcoming Jewar International Airport (approx. 40 minutes).",
+      "The township features wide well-designed internal roads, underground electricity network, underground water supply, landscaped community parks, 24x7 CCTV security, and immediate access to top schools, hospitals, and transit points within a 3 km radius."
+    ],
+    highlights: [
+      "Strategically Located on NH-91 near Dadri Bypass, Dadri (New Noida)",
+      "Seamless multi-corridor connectivity to Noida, Greater Noida, and Ghaziabad",
+      "Approx. 40 minutes drive to Noida International Airport (Jewar)",
+      "Close to major industrial corridors (DMIC) and Eastern Peripheral Expressway (6-lane EPE)",
+      "Modern Underground Infrastructure: Underground cabling & underground water supply",
+      "Wide, well-designed internal avenues with street lights throughout the township",
+      "24x7 Gated Security with active campus CCTV surveillance",
+      "Comprehensive Social Infrastructure within 3 km: Top schools, hospitals, fuel stations, and shopping hubs"
+    ],
+    amenities: [
+      { name: "Underground Electricity Network", icon: "Zap" },
+      { name: "Underground Water Supply", icon: "CloudRain" },
+      { name: "24/7 Gated Security & CCTV", icon: "Lock" },
+      { name: "Wide Internal Paved Roads", icon: "Milestone" },
+      { name: "Landscaped Green Parks", icon: "Trees" },
+      { name: "Street Lights Throughout Township", icon: "Sun" },
+      { name: "Grand Entry Gate House", icon: "Building2" },
+      { name: "3 Km to Schools & Hospitals", icon: "MapPin" }
+    ],
+    gallery: [
+      "/images/dhani-enclave/hero_entrance.jpg",
+      "/images/dhani-enclave/lifestyle_family.jpg",
+      "/images/dhani-enclave/vicinity_amenities.jpg",
+      "/images/dhani-enclave/site_location_view.jpg"
+    ],
+    masterplanImage: "/images/dhani-enclave/site_location_view.jpg",
+    brochurePath: "/downloads/Dhani-Enclave-Brochure.pdf",
+    brochurePages: [
+      "/images/dhani-enclave/page_1.jpg",
+      "/images/dhani-enclave/page_2.jpg"
+    ],
+    titleStatus: "100% Clear Title / Upcoming Gated Enclave",
+    reraNumber: "100% Clear Title / Upcoming Gated Enclave",
+    squareFootage: "Demarcated Residential Plots (Flexible Sizes Available)"
   }
 ];

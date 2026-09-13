@@ -41,6 +41,16 @@ export const DOWNLOADS_DATA: DownloadableDoc[] = [
     description: "Official project brochure with layout plans, 60 & 80 Sq.Yd. 3BHK villa construction specs, location map on NH-91 GT Road Dadri, and vicinity ecosystem."
   },
   {
+    id: "dhani-enclave-brochure",
+    title: "Dhani Enclave Residential Plots Brochure",
+    category: "Project Brochures",
+    fileType: "PDF",
+    fileSize: "1.2 MB",
+    filePath: "/downloads/Dhani-Enclave-Brochure.pdf",
+    isAvailable: true,
+    description: "Official project brochure detailing Dhani Enclave demarcated residential plots, wide internal roads, underground utilities, and location advantages near Dadri Bypass."
+  },
+  {
     id: "masterplan-farmhouses",
     title: "Bollywood Aero City Farms Master Layout Plan",
     category: "Masterplans",
