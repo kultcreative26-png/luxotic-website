@@ -261,26 +261,24 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-wrap items-center gap-2 mt-6 md:mt-0">
-                {["All", "Farmhouses", "Plotted Developments", "Residential Properties"].map(
-                  (cat) => (
-                    <button
-                      key={cat}
-                      onClick={() => setSelectedCategory(cat)}
-                      className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
-                        selectedCategory === cat
-                          ? "bg-slate-900 text-white shadow-sm"
-                          : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                      }`}
-                    >
-                      {cat}
-                    </button>
-                  )
-                )}
+                {["All", "Farmhouses", "Residential Properties"].map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
+                      selectedCategory === cat
+                        ? "bg-slate-900 text-white shadow-sm"
+                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
               </div>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredProjects.map((project, idx) => (
               <AnimatedSection key={project.slug} delay={idx * 0.15}>
                 <div className="group border border-slate-200 bg-white flex flex-col justify-between luxury-card h-full">

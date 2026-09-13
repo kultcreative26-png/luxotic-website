@@ -80,18 +80,18 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li>
-                <Link href="/projects?category=farmhouses" className="hover:text-white transition-colors">
-                  Premium Farmhouses
+                <Link href="/projects/bollywood-aero-city-farms" className="hover:text-white transition-colors">
+                  Bollywood Aero City Farms
                 </Link>
               </li>
               <li>
-                <Link href="/projects?category=plots" className="hover:text-white transition-colors">
-                  Plotted Developments
+                <Link href="/projects/radha-paradise" className="hover:text-white transition-colors">
+                  Radha Paradise Luxury Villas
                 </Link>
               </li>
               <li>
-                <Link href="/projects?category=residential" className="hover:text-white transition-colors">
-                  Luxury Residences
+                <Link href="/projects" className="hover:text-white transition-colors">
+                  All Featured Projects
                 </Link>
               </li>
               <li>

@@ -41,26 +41,6 @@ export const DOWNLOADS_DATA: DownloadableDoc[] = [
     description: "Official project brochure with layout plans, 60 & 80 Sq.Yd. 3BHK villa construction specs, location map on NH-91 GT Road Dadri, and vicinity ecosystem."
   },
   {
-    id: "plots-brochure",
-    title: "Luxotic Horizon Plotted Enclave Brochure",
-    category: "Project Brochures",
-    fileType: "PDF",
-    fileSize: "3.9 MB",
-    filePath: "/downloads/Luxotic-Plots-Brochure.pdf",
-    isAvailable: true,
-    description: "Complete overview of masterplanned plotted developments, underground utilities grid, and site layout plans."
-  },
-  {
-    id: "residences-brochure",
-    title: "Luxotic Grand Residences Overview",
-    category: "Project Brochures",
-    fileType: "PDF",
-    fileSize: "5.1 MB",
-    filePath: "/downloads/Luxotic-Residences-Brochure.pdf",
-    isAvailable: false, // Coming soon fallback test
-    description: "Architectural layouts, floor plans, luxury finishes, and lifestyle specifications for modern luxury residences."
-  },
-  {
     id: "masterplan-farmhouses",
     title: "Bollywood Aero City Farms Master Layout Plan",
     category: "Masterplans",
