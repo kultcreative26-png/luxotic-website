@@ -141,32 +141,35 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4 relative z-20">
-          <div>
+        <div 
+          suppressHydrationWarning
+          className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4 relative z-30"
+        >
+          <div suppressHydrationWarning>
             © {new Date().getFullYear()} LUXOTIC Infrastructure Private Limited. All rights reserved.
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-6">
-            <Link 
+          <div 
+            suppressHydrationWarning
+            className="flex flex-wrap items-center justify-center gap-6"
+          >
+            <a 
               href="/privacy" 
-              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "instant" })}
-              className="hover:text-slate-300 transition-colors cursor-pointer py-1"
+              className="text-slate-400 hover:text-white transition-colors cursor-pointer py-1 font-medium"
             >
               Privacy Policy
-            </Link>
-            <Link 
+            </a>
+            <a 
               href="/terms" 
-              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "instant" })}
-              className="hover:text-slate-300 transition-colors cursor-pointer py-1"
+              className="text-slate-400 hover:text-white transition-colors cursor-pointer py-1 font-medium"
             >
               Terms & Conditions
-            </Link>
-            <Link 
+            </a>
+            <a 
               href="/disclaimer" 
-              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "instant" })}
-              className="hover:text-slate-300 transition-colors cursor-pointer py-1"
+              className="text-slate-400 hover:text-white transition-colors cursor-pointer py-1 font-medium"
             >
               Legal Disclaimer
-            </Link>
+            </a>
           </div>
         </div>
       </div>

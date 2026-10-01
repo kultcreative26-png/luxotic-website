@@ -1,5 +1,29 @@
 [
   {
+    "id": "v-1790897290214",
+    "page": "/terms",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-10-01T23:28:10.214Z"
+  },
+  {
+    "id": "v-1790897284633",
+    "page": "/",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-10-01T23:28:04.633Z"
+  },
+  {
+    "id": "v-1790897284566",
+    "page": "/",
+    "referrer": "Direct / Organic",
+    "device": "Desktop",
+    "browser": "Chrome",
+    "timestamp": "2026-10-01T23:28:04.566Z"
+  },
+  {
     "id": "v-1790896659370",
     "page": "/contact",
     "referrer": "Direct / Organic",

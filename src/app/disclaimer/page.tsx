@@ -29,7 +29,7 @@ export default function DisclaimerPage() {
       {/* Hero Banner */}
       <PageHeroBanner
         tag="LEGAL DISCLOSURE"
-        title="Official"
+        title="Legal"
         highlightText="Disclaimer"
         subtitle="Important regulatory and legal disclosures regarding architectural representations, dimensional specifications, title verification, and investment expectations."
         backgroundImage="/images/banners/banner-about.jpg"
