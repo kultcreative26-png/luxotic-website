@@ -7,7 +7,7 @@ import { SITE_DATA } from "@/data/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-white border-t border-slate-900 pt-16 pb-12 relative z-20">
+    <footer className="bg-slate-950 text-white border-t border-slate-900 pt-16 pb-24 sm:pb-20 relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
           {/* Column 1: Brand Info */}
@@ -143,30 +143,30 @@ export default function Footer() {
         {/* Footer Bottom Bar */}
         <div 
           suppressHydrationWarning
-          className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4 relative z-30"
+          className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4 relative z-30 md:pr-24"
         >
           <div suppressHydrationWarning>
             © {new Date().getFullYear()} LUXOTIC Infrastructure Private Limited. All rights reserved.
           </div>
           <div 
             suppressHydrationWarning
-            className="flex flex-wrap items-center justify-center gap-6"
+            className="flex flex-wrap items-center justify-center gap-4 sm:gap-6"
           >
             <a 
               href="/privacy" 
-              className="text-slate-400 hover:text-white transition-colors cursor-pointer py-1 font-medium"
+              className="text-slate-400 hover:text-white transition-colors cursor-pointer px-2 py-1.5 font-medium hover:underline"
             >
               Privacy Policy
             </a>
             <a 
               href="/terms" 
-              className="text-slate-400 hover:text-white transition-colors cursor-pointer py-1 font-medium"
+              className="text-slate-400 hover:text-white transition-colors cursor-pointer px-2 py-1.5 font-medium hover:underline"
             >
               Terms & Conditions
             </a>
             <a 
               href="/disclaimer" 
-              className="text-slate-400 hover:text-white transition-colors cursor-pointer py-1 font-medium"
+              className="text-slate-400 hover:text-white transition-colors cursor-pointer px-2 py-1.5 font-medium hover:underline"
             >
               Legal Disclaimer
             </a>

@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex items-center group">
+    <div className="fixed bottom-6 right-6 z-50 flex items-center group pointer-events-none">
       {/* Tooltip Popup Badge */}
       <div
         className={`hidden md:flex items-center mr-3 px-3.5 py-2 bg-slate-900/95 text-white backdrop-blur-md rounded-xl shadow-2xl border border-white/10 transition-all duration-300 pointer-events-none ${
@@ -35,7 +35,7 @@ export default function WhatsAppButton() {
         aria-label="Chat with LUXOTIC Infrastructure on WhatsApp"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="relative flex items-center justify-center w-14 h-14 bg-gradient-to-tr from-[#20bd5a] to-[#25D366] text-white rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_35px_rgba(37,211,102,0.6)] hover:scale-110 active:scale-95 transition-all duration-300 group"
+        className="pointer-events-auto relative flex items-center justify-center w-14 h-14 bg-gradient-to-tr from-[#20bd5a] to-[#25D366] text-white rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_35px_rgba(37,211,102,0.6)] hover:scale-110 active:scale-95 transition-all duration-300 group"
       >
         {/* Pulsing Ripple Effect */}
         <span className="absolute -inset-1 rounded-full bg-[#25D366]/40 animate-ping opacity-75 group-hover:opacity-100 pointer-events-none" />
