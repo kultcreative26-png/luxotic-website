@@ -246,51 +246,53 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">
-                      VISUAL TOUR
+              {project.gallery && project.gallery.length > 0 && (
+                <div className="space-y-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">
+                        VISUAL TOUR
+                      </div>
+                      <h3 className="font-serif text-2xl text-slate-900">
+                        Project Gallery
+                      </h3>
                     </div>
-                    <h3 className="font-serif text-2xl text-slate-900">
-                      Project Gallery
-                    </h3>
-                  </div>
-                  <button
-                    onClick={() => {
-                      setSelectedGalleryIdx(0);
-                      setGalleryOpen(true);
-                    }}
-                    className="text-xs font-semibold uppercase tracking-wider text-slate-900 flex items-center gap-1.5 hover:underline"
-                  >
-                    <Maximize2 className="w-4 h-4" />
-                    <span>View Fullscreen</span>
-                  </button>
-                </div>
-
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                  {project.gallery.map((img, idx) => (
                     <button
-                      key={idx}
                       onClick={() => {
-                        setSelectedGalleryIdx(idx);
+                        setSelectedGalleryIdx(0);
                         setGalleryOpen(true);
                       }}
-                      className="relative aspect-square w-full overflow-hidden border border-slate-200 group"
+                      className="text-xs font-semibold uppercase tracking-wider text-slate-900 flex items-center gap-1.5 hover:underline"
                     >
-                      <Image
-                        src={img}
-                        alt={`${project.name} photo ${idx + 1}`}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                        <Maximize2 className="w-5 h-5" />
-                      </div>
+                      <Maximize2 className="w-4 h-4" />
+                      <span>View Fullscreen</span>
                     </button>
-                  ))}
+                  </div>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    {project.gallery.map((img, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          setSelectedGalleryIdx(idx);
+                          setGalleryOpen(true);
+                        }}
+                        className="relative aspect-square w-full overflow-hidden border border-slate-200 group"
+                      >
+                        <Image
+                          src={img}
+                          alt={`${project.name} photo ${idx + 1}`}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                          <Maximize2 className="w-5 h-5" />
+                        </div>
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
 
             <div className="lg:col-span-4 space-y-6">
@@ -351,13 +353,15 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
         </div>
       </section>
 
-      <GalleryModal
-        isOpen={galleryOpen}
-        images={project.gallery}
-        initialIndex={selectedGalleryIdx}
-        onClose={() => setGalleryOpen(false)}
-        projectName={project.name}
-      />
+      {project.gallery && project.gallery.length > 0 && (
+        <GalleryModal
+          isOpen={galleryOpen}
+          images={project.gallery}
+          initialIndex={selectedGalleryIdx}
+          onClose={() => setGalleryOpen(false)}
+          projectName={project.name}
+        />
+      )}
 
       <EnquireModal
         isOpen={enquireOpen}

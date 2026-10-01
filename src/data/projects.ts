@@ -117,12 +117,7 @@ export const PROJECTS_DATA: Project[] = [
       { name: "Earthquake-Resistant Structure", icon: "Building2" },
       { name: "Vicinity to Top Schools & Hospitals", icon: "MapPin" }
     ],
-    gallery: [
-      "/images/radha-paradise/hero_entrance.jpg",
-      "/images/radha-paradise/villa_floorplans.jpg",
-      "/images/radha-paradise/amenities_vicinity.jpg",
-      "/images/radha-paradise/masterplan_layout.jpg"
-    ],
+    gallery: [],
     masterplanImage: "/images/radha-paradise/masterplan_layout.jpg",
     brochurePath: "/downloads/Radha-Paradise-Brochure.pdf",
     brochurePages: [
@@ -170,12 +165,7 @@ export const PROJECTS_DATA: Project[] = [
       { name: "Grand Entry Gate House", icon: "Building2" },
       { name: "3 Km to Schools & Hospitals", icon: "MapPin" }
     ],
-    gallery: [
-      "/images/dhani-enclave/hero_entrance.jpg",
-      "/images/dhani-enclave/lifestyle_family.jpg",
-      "/images/dhani-enclave/vicinity_amenities.jpg",
-      "/images/dhani-enclave/site_location_view.jpg"
-    ],
+    gallery: [],
     masterplanImage: "/images/dhani-enclave/site_location_view.jpg",
     brochurePath: "/downloads/Dhani-Enclave-Brochure.pdf",
     brochurePages: [
