@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowUpRight, MessageSquare } from "lucide-react";
@@ -5,7 +7,7 @@ import { SITE_DATA } from "@/data/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-white border-t border-slate-900 pt-16 pb-12">
+    <footer className="bg-slate-950 text-white border-t border-slate-900 pt-16 pb-12 relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
           {/* Column 1: Brand Info */}
@@ -139,18 +141,30 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4 relative z-20">
           <div>
             © {new Date().getFullYear()} LUXOTIC Infrastructure Private Limited. All rights reserved.
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
+            <Link 
+              href="/privacy" 
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "instant" })}
+              className="hover:text-slate-300 transition-colors cursor-pointer py-1"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-slate-300 transition-colors">
+            <Link 
+              href="/terms" 
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "instant" })}
+              className="hover:text-slate-300 transition-colors cursor-pointer py-1"
+            >
               Terms & Conditions
             </Link>
-            <Link href="/disclaimer" className="hover:text-slate-300 transition-colors">
+            <Link 
+              href="/disclaimer" 
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "instant" })}
+              className="hover:text-slate-300 transition-colors cursor-pointer py-1"
+            >
               Legal Disclaimer
             </Link>
           </div>
