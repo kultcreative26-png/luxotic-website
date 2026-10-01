@@ -10,14 +10,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
           {/* Column 1: Brand Info */}
           <div className="lg:col-span-2 space-y-6">
-            <div className="relative w-48 h-12">
+            <Link href="/" className="relative block w-48 h-12 hover:opacity-90 transition-opacity">
               <Image
                 src="/logo/logo-white.svg"
                 alt="LUXOTIC Infrastructure"
                 fill
                 className="object-contain object-left"
               />
-            </div>
+            </Link>
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
               LUXOTIC Infrastructure Private Limited is a trusted real estate company dedicated to delivering premium farmhouses, residential properties, and plotted developments backed by transparency, integrity, and professional service.
             </p>
@@ -124,13 +124,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-slate-400 shrink-0" />
-                <a href={`tel:${SITE_DATA.contact.phoneRaw}`} className="hover:text-white">
+                <a href={`tel:${SITE_DATA.contact.phoneRaw}`} className="hover:text-white transition-colors">
                   {SITE_DATA.contact.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-slate-400 shrink-0" />
-                <a href={`mailto:${SITE_DATA.contact.email}`} className="hover:text-white truncate">
+                <a href={`mailto:${SITE_DATA.contact.email}`} className="hover:text-white transition-colors truncate">
                   {SITE_DATA.contact.email}
                 </a>
               </li>
@@ -143,15 +143,15 @@ export default function Footer() {
           <div>
             © {new Date().getFullYear()} LUXOTIC Infrastructure Private Limited. All rights reserved.
           </div>
-          <div className="flex items-center space-x-6">
-            <Link href="/contact" className="hover:text-slate-400 transition-colors">
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="hover:text-slate-400 transition-colors">
+            <Link href="/terms" className="hover:text-slate-300 transition-colors">
               Terms & Conditions
             </Link>
-            <Link href="/contact" className="hover:text-slate-400 transition-colors">
-              Disclaimer
+            <Link href="/disclaimer" className="hover:text-slate-300 transition-colors">
+              Legal Disclaimer
             </Link>
           </div>
         </div>
